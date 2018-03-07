@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.zhaw.it15a_zh.psit3_03.mealmanager">
+  
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <application
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".activities.RecipeOverviewActivity"
+        android:label="@string/title_activity_recipe_overview"
+        android:launchMode="singleTop"/>
+    
+    <activity
+        android:name=".activities.RecipeDetailedViewActivity"
+        android:label="@string/toolbar_title_recipe_detailed"
+        android:parentActivityName=".activities.RecipeOverviewActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="ch.zhaw.it15a_zh.psit3_03.mealmanager.activities.RecipeOverviewActivity"/>
+    </activity>
+  
+    <activity android:name=".activities.ShoppingListViewActivity"
+        android:label="@string/title_activity_shoppinglistview"
+              android:parentActivityName=".MainActivity">
+      <meta-data
+              android:name="android.support.PARENT_ACTIVITY"
+              android:value="ch.zhaw.it15a_zh.psit3_03.mealmanager.MainActivity"/>
+    </activity>
+
+    <activity
+        android:name=".activities.WeekPlanActivity"
+        android:label="@string/toolbar_title_weekplan_activity"
+        android:parentActivityName=".MainActivity">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="ch.zhaw.it15a_zh.psit3_03.mealmanager.MainActivity"/>
+    </activity>
+    
+    
+    <activity android:name=".activities.DateRangePicker">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value="ch.zhaw.it15a_zh.psit3_03.mealmanager.activities.WeekPlanActivity"/>
+    </activity>
+    <service android:name=".ann.ANNService" />
+  </application>
+</manifest>

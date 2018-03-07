@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_recipes"
+    android:id="@+id/toolbar_recipe_detailed_view_header">
+  
+  <TextView
+      android:id="@+id/textView_recipe_name"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@+id/imageView_recipeImage"/>
+  
+  <ImageView
+      android:id="@+id/imageView_recipeImage"
+      android:src="@drawable/placeholder"
+      android:layout_width="match_parent"
+      android:layout_height="240dp"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"/>
+  
+  <TextView
+      android:layout_alignParentLeft="true"
+      android:id="@+id/textView_preparation_time_colon"
+      android:text="@string/text_preparation_time_colon"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView_recipe_name"
+      android:layout_alignStart="@+id/textView_recipe_name"
+      android:layout_alignLeft="@+id/imageView_recipeImage"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="5sp"/>
+  
+  <TextView
+      android:id="@+id/textView_preparation_time"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@+id/textView_preparation_time_colon"
+      android:layout_alignBaseline="@+id/textView_preparation_time_colon"
+      android:layout_toRightOf="@+id/textView_preparation_time_colon"
+      android:paddingLeft="5dp"/>
+  
+  <TextView
+      android:id="@+id/textView_time_unit_minutes"
+      android:text="@string/text_time_unit_minutes"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@+id/textView_preparation_time"
+      android:layout_alignBaseline="@+id/textView_preparation_time"
+      android:layout_toRightOf="@+id/textView_preparation_time"
+      android:paddingLeft="5dp"/>
+  
+  <RatingBar
+      android:id="@+id/ratingBar_health_rating_bar"
+      android:theme="@style/RatingBar"
+      android:numStars="5"
+      android:stepSize="0.5"
+      android:isIndicator="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/healthRating"
+      android:layout_centerHorizontal="true"
+      android:layout_marginLeft="40dp"
+      android:paddingTop="2dp"/>
+  
+  <TextView
+      android:id="@+id/textView_ingredients_for"
+      android:text="@string/textView_ingredients_for"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView_preparation_instructions"
+      android:layout_alignStart="@+id/textView_preparation_time_colon"
+      android:layout_alignLeft="@+id/textView_preparation_time_colon"/>
+  
+  <TextView
+      android:id="@+id/textView_servings_colon"
+      android:text="@string/textView_servings_colon"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toEndOf="@+id/textView_servings"
+      android:layout_alignBaseline="@id/textView_ingredients_for"
+      android:layout_toRightOf="@+id/textView_servings"
+      android:paddingBottom="@dimen/padding_recipe_detailed_right_10dp"/>
+  
+  <TextView
+      android:id="@+id/textView_servings"
+      android:textAppearance="?android:attr/textAppearanceLarge"
+      android:paddingLeft="5sp"
+      android:paddingRight="5sp"
+      android:layout_alignBaseline="@id/textView_ingredients_for"
+      android:layout_toEndOf="@id/textView_ingredients_for"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/textView_ingredients_for"/>
+  
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/healthRating"
+      android:text="@string/healthRating"
+      android:layout_alignStart="@+id/textView_preparation_time_colon"
+      android:layout_alignLeft="@+id/textView_preparation_time_colon"
+      android:layout_below="@+id/textView_preparation_time_colon"
+      android:textAppearance="?android:attr/textAppearanceLarge"/>
+  
+  <TextView
+      android:id="@+id/textView_preparation_instructions_colon"
+      android:text="@string/textView_preparation_instructions_colon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/ratingBar_health_rating_bar"
+      android:padding="@dimen/recipe_detailed_view_recipe_title"
+      android:textAppearance="?android:attr/textAppearanceLarge"/>
+  
+  <TextView
+      android:id="@+id/textView_preparation_instructions"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/textView_preparation_instructions_colon"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:textColor="@color/white"
+      android:padding="@dimen/recipe_detailed_view_recipe_title"/>
+
+</RelativeLayout>

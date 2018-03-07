@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--Color used for lines deviding content visually. This will remain the same throughout the entire app-->
+  <color name="dividerLine">#E2F8F8</color>
+  
+  <!--Colors used for the toolbar. These will remain identical throughout the entire app-->
+  <color name="toolbar_background">#398888</color>
+  <color name="toolbar_title_color">#E2F8F8</color>
+  
+  <!--Colors used in main activity. Activies which are launched from this menu will have the same background colors-->
+  <color name="background_weekplan">#2fdbd1</color>
+  <color name="background_recipes">#21BFA9</color>
+  <color name="background_shoppinglist">#167F71</color>
+  
+  <!--Text Color for headers-->
+  <color name="header_text_color">#FFFFFF</color>
+  
+  <!--Button background color which for button which adds ingredients to a shopping list from a detailed recipe view-->
+  <color name="background_button_add_ingredients_to_shoppinglist">#2e8987</color>
+  
+  
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="green">#21BFA9</color>
+  <color name="darkgreen">#167F71</color>
+  <color name="brightgreen">#2CFFE1</color>
+  <color name="verydarkgreen">#0B4038</color>
+  <color name="middlegreen">#28E5CB</color>
+  
+  <!--Colors used for the health rating bar-->
+  <color name="empty_stars">#FFFBE9</color>
+  <color name="filled_stars">#4D6F59</color>
+    <color name="white">#FFFFFF</color>
+
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_custom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+>
+    <TextView
+            android:id="@+id/textView_add_itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_toLeftOf="@+id/edittext_shopping_list_name"
+    />
+
+    <TextView
+            android:id="@+id/textView_add_itemamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menge"
+            android:layout_toLeftOf="@+id/edittext_shopping_list_amount"
+    />
+    <EditText
+            android:id="@+id/edittext_shopping_list_name"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+    />
+
+    <EditText
+            android:id="@+id/edittext_shopping_list_amount"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_alignBottom="@+id/edittext_shopping_list_name"
+            android:inputType="numberSigned"
+    />
+    <Button
+            android:id="@+id/button_shoppingList_add_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/edittext_shopping_list_amount"
+            android:text="Fertig"
+            android:background="#000000"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:padding="0dp"
+    />
+</LinearLayout>

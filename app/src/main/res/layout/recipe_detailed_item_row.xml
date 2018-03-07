@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_recipes">
+  
+  <TextView
+      android:id="@+id/textView_bulletpoint"
+      android:text="@string/bulletpoint"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_size_recipe_detailed_item_row"
+      android:paddingRight="@dimen/padding_recipe_detailed_right_10dp"
+      android:paddingLeft="@dimen/padding_recipe_detailed_right_10dp"/>
+  
+  <TextView
+      android:id="@+id/textView_itemAmount"
+      android:textSize="@dimen/text_size_recipe_detailed_item_row"
+      android:textColor="@color/white"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/textView_bulletpoint"
+      android:paddingRight="@dimen/padding_recipe_detailed_right_10dp"/>
+  
+  <TextView
+      android:id="@+id/textView_itemUnit"
+      android:textColor="@color/white"
+      android:textSize="@dimen/text_size_recipe_detailed_item_row"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/textView_itemAmount"
+      android:paddingRight="@dimen/padding_recipe_detailed_right_10dp"/>
+  
+  <TextView
+      android:id="@+id/textView_itemName"
+      android:textColor="@color/white"
+      android:textSize="@dimen/text_size_recipe_detailed_item_row"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/textView_itemUnit"
+      android:paddingRight="@dimen/padding_recipe_detailed_right_10dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/background_shoppinglist"
+        tools:openDrawer="start">
+
+    <android.support.design.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/green"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_recipes"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <include
+                    android:id="@+id/navigation_header_include"
+                    layout="@layout/nav_header_recipe_overview"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:id="@+id/textView_sortText"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/navigation_header_include"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+                      android:paddingTop="5sp"
+                      android:paddingBottom="5sp"
+                      android:paddingLeft="10sp"
+                      android:textColor="@color/header_text_color"
+                      android:background="#1bb7a2"
+                      android:text="@string/sort_by"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_sort"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_sortText"
+                    xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:id="@+id/textView_reset_sort"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/recycler_view_sort"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:textColor="@color/header_text_color"
+                      android:singleLine="true"
+                      android:ellipsize="end"
+                      android:paddingTop="5sp"
+                      android:paddingBottom="5sp"
+                      android:paddingLeft="17sp"
+                      android:background="#1bbca6"
+                      android:text="@string/reset_sorting"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:id="@+id/textView_filterText"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/textView_reset_sort"
+                      android:textSize="20sp"
+                      android:textStyle="bold"
+                      android:paddingTop="5sp"
+                      android:paddingBottom="5sp"
+                      android:paddingLeft="10sp"
+                      android:textColor="@color/header_text_color"
+                      android:background="#1bb7a2"
+                      android:text="@string/filter_text"/>
+            <include
+                    android:id="@+id/filter_row_one"
+                    layout="@layout/filter_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_filterText"
+            />
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_filter_all_kinds"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@id/filter_row_one"
+                    xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+            <include
+                    android:id="@+id/filter_row_two"
+                    layout="@layout/filter_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycler_view_filter_all_kinds"
+            />
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_filter_all_meals"
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@id/filter_row_two"
+                    xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:id="@+id/textView_reset_filter"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/recycler_view_filter_all_meals"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:textColor="@color/header_text_color"
+                      android:singleLine="true"
+                      android:ellipsize="end"
+                      android:paddingTop="5sp"
+                      android:paddingBottom="5sp"
+                      android:paddingLeft="10sp"
+                      android:background="#1bbca6"
+                      android:text="@string/reset_filtering"/>
+
+        </RelativeLayout>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

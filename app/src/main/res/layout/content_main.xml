@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_mealmanager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+  <include
+      layout="@layout/toolbar_main"
+      android:id="@+id/toolbar_main">
+
+  </include>
+
+  <Button
+      android:id="@+id/button_shoppingList"
+      android:text="@string/button_text_shoppinglist"
+      android:textSize="@dimen/sub_heading"
+      android:background="@color/background_shoppinglist"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"/>
+
+  <Button
+      android:id="@+id/button_recipes"
+      android:text="@string/button_text_recipes"
+      android:textSize="@dimen/sub_heading"
+      android:background="@color/background_recipes"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"/>
+
+  <Button
+      android:id="@+id/button_meal_proposal"
+      android:text="@string/button_text_weekplan"
+      android:textSize="@dimen/sub_heading"
+      android:background="@color/background_weekplan"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"/>
+</LinearLayout>

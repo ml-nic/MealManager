@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_weekplan"
+
+    >
+  
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/button_plan_recipes_for_this_day"
+      android:text="@string/button_plan_recipes_for_this_day"
+      android:layout_marginLeft="15sp"
+      android:layout_marginRight="15sp"
+      />
+  
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="1sp"
+      android:layout_below="@+id/button_plan_recipes_for_this_day"
+      android:background="@color/calendar_divider"
+      />
+
+</RelativeLayout>

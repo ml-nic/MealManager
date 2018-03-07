@@ -1,0 +1,85 @@
+﻿<resources>
+    <string name="app_name">MealManager</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <string name="button_text_shoppinglist">Einkaufsliste</string>
+    <string name="button_text_recipes">Rezepte</string>
+    <string name="button_text_weekplan">Wochenplan</string>
+    <string name="toolbar_title_recipe_detailed">Rezept Detailed View</string>
+    <string name="shopping_list_title">Einkaufsliste</string>
+    <string name="main_title">MealManager</string>
+    <string name="textView_text_recipe_name">Recipe Title</string>
+    <string name="button_text_add_items">Zutaten Hinzufügen</string>
+    <string name="itemsAddedConfirmation">Zutaten Hinzugefügt</string>
+    <string name="textView_ingredients_for">Zutaten für</string>
+    <string name="text_preparation_time_colon">Zubereitungszeit:</string>
+    <string name="text_preparation_time">20</string>
+    <string name="text_time_unit_minutes">Minuten</string>
+    <string name="healthRating">Gesundheit:</string>
+    <string name="text_preparation_instructions_colon">Zubereitung:</string>
+
+    <string-array name="ingredients">
+        <item name="sugare">Zucker</item>
+        <item name="milk">Milch</item>
+        <item name="whiskey">Whiskey</item>
+        <item name="flower">Mehl</item>
+        <item name="eggs">Eier</item>
+        <item name="water">Wasser</item>
+        <item name="beer">Bier</item>
+    </string-array>
+
+
+    <string-array name="units">
+        <item>l</item>
+        <item>kg</item>
+        <item>g</item>
+        <item>ml</item>
+    </string-array>
+    <string name="title_activity_recipe_overview">RecipeOverviewActivity</string>
+    <string name="title_activity_shoppinglistview">ShoppingListViewActivity</string>
+    <string name="textView_recipe_name">Name</string>
+    <string name="text_short_recipe_description">Beschreibung</string>
+    <string name="textView_preparation_time_unit_minutes">Minuten</string>
+
+
+    <string name="search">Suche</string>
+    <string name="action_sort">Sortieren</string>
+    <string name="action_filter">Filter</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="recipe_overview_title">Übersicht Rezepte</string>
+    <string name="sort_by">Sortieren nach</string>
+    <string name="filter_text">Filter</string>
+    <string name="filter_favorite">Favorit</string>
+    <string name="filter_all_kinds">Alle Arten</string>
+    <string name="finish">Fertig</string>
+    <string name="textView_preparation_instructions_colon">Zubereitung:</string>
+    <string name="toolbar_title_weekplan_activity">Wochenplan</string>
+    <string name="textView_servings_colon">Portionen</string>
+    <string name="ic_action_add">add</string>
+    <string name="ic_action_weekplan_add">add</string>
+    <string name="ic_action_weekplan_menu">ic_action_weekplan_menu</string>
+    <string name="button_text_select_dates">Für gewählte Tage planen</string>
+    <string name="button_plan_recipes_for_this_day">Rezepte zu diesem Tag planen</string>
+    <string name="button_delete_day_from_planning">Gesamten Tag aus der Planung löschen</string>
+    <string name="reset_sorting">Sortieren zurücksetzen</string>
+    <string name="reset_filtering">Filter zurücksetzen</string>
+    <string name="textView_preparation_inscrutcionts_colon">Zubereitung:</string>
+    <string name="cookingtime">Zubereitungszeit</string>
+    <string name="company">Gruppe 03 PSIT3 ZHAW</string>
+    <string name="bulletpoint">•</string>
+    <string name="plus_sign">+</string>
+    <string name="minus_sign">-</string>
+    <string name="add_recipe_to_this_day">Füge Rezept zu diesem Tag hinzu</string>
+    <string name="add_items_to_shoppinglist">Zutaten zur Einkaufsliste hinzufügen</string>
+    <string name="add_to_planning">Zu Planung hinzufügen</string>
+    <string name="all_courses">Alle Tageszeiten</string>
+    <string name="time">"Time: "</string>
+    <string name="insert">Hinzufügen</string>
+    <string name="insert_item">Lebensmittel einfügen</string>
+    <string name="name">Name :</string>
+    <string name="amount">Menge :</string>
+    <string name="unit">Einheit :</string>
+
+</resources>

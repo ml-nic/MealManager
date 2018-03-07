@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activities.WeekPlanActivity">
+
+
+    <item
+            android:id="@+id/ic_action_weekplan_add"
+            android:icon="@drawable/ic_action_weekplan_add"
+            app:showAsAction="ifRoom|collapseActionView"
+            android:title="@string/ic_action_weekplan_add"
+    />
+
+
+</menu>
