@@ -1,2 +1,2 @@
 # MealManager
-This was the project of me and some of my student college during the 3. semester.
+This was the project of me and some of my co-students during the 3. semester.
